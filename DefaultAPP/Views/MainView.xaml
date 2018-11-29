@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="DefaultAPP.Views.MainView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand"
+                         Orientation="Vertical">
+                <Label HorizontalOptions="CenterAndExpand" Text="MainPage" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
