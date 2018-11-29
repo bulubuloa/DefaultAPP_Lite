@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
-    <PackageReference Include="SupportXFLite" Version="1.0.3-alpha" />
+    <PackageReference Include="SupportXFLite" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

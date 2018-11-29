@@ -1,19 +1,8 @@
 ﻿<Properties StartupConfiguration="{6EB43071-5DFE-4F6D-9BD8-D982F890A433}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="DefaultAPP/InitializeProject.cs">
     <Files>
-      <File FileName="DefaultAPP/InitializeProject.cs" Line="68" Column="10" />
+      <File FileName="DefaultAPP/InitializeProject.cs" Line="11" Column="21" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="DefaultAPP" expanded="True">
-            <Node name="DefaultAPP" expanded="True">
-              <Node name="InitializeProject.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
