@@ -1,10 +1,6 @@
 ﻿<Properties StartupConfiguration="{6EB43071-5DFE-4F6D-9BD8-D982F890A433}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.DefaultAPP.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3E1706BF-323D-427B-A7B0-D4465227F3F9" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DefaultAPP.iOS/AppDelegate.cs">
-    <Files>
-      <File FileName="DefaultAPP/App.xaml" Line="87" Column="15" />
-      <File FileName="DefaultAPP.iOS/AppDelegate.cs" Line="31" Column="13" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
