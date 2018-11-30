@@ -1,22 +1,19 @@
-﻿<Properties StartupConfiguration="{6EB43071-5DFE-4F6D-9BD8-D982F890A433}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.DefaultAPP.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3E1706BF-323D-427B-A7B0-D4465227F3F9" />
+﻿<Properties StartupConfiguration="{6EB43071-5DFE-4F6D-9BD8-D982F890A433}|Default">
+  <MonoDevelop.Ide.ItemProperties.DefaultAPP.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D39B639A-E15C-46DA-8FFE-CF9C4512D2FF" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DefaultAPP" expanded="True">
-            <Node name="DefaultAPP" expanded="True" />
             <Node name="DefaultAPP.Android" expanded="True" />
-            <Node name="DefaultAPP.iOS" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
-            </Node>
+            <Node name="DefaultAPP.iOS" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.DefaultAPP.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.DefaultAPP.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
