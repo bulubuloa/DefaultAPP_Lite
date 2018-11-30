@@ -162,4 +162,9 @@
       <Name>DefaultAPP</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fonts\roboto\Roboto-Bold.ttf" />
+    <BundleResource Include="Resources\Fonts\roboto\Roboto-Medium.ttf" />
+    <BundleResource Include="Resources\Fonts\roboto\Roboto-Regular.ttf" />
+  </ItemGroup>
 </Project>

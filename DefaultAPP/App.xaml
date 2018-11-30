@@ -1,5 +1,87 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DefaultAPP.App">
+<?xml version="1.0" encoding="utf-8" ?>
+<Application x:Class="DefaultAPP.App"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Application.Resources>
-    </Application.Resources>
+        <ResourceDictionary>
+            
+            <!--Define Colors-->
+            <Color x:Key="ColorPrimary">#62175a</Color>
+            <Color x:Key="ColorPrimaryDark">#62175a</Color>
+            <Color x:Key="ColorAccent">#FF4081</Color>
+            <Color x:Key="ColorWhite">#FFFFFF</Color>
+            <Color x:Key="ColorBlack">#000000</Color>
+            <Color x:Key="ColorLabel_Description">#dadbe6</Color>
+            <Color x:Key="ColorLabel_Content">#dadbe6</Color>
+            <Color x:Key="ColorDeepBackground">#1D2628</Color>
+            <Color x:Key="ColorSeperator">Silver</Color>
+            <Color x:Key="ColorDeepBackground_NavigationBar">#4A5152</Color>
+            
+            <!--Define Sizes -->
+            <OnPlatform x:Key="SmallestSize"
+                        x:TypeArguments="x:Double"
+                        Android="8"
+                        iOS="8" />
+            <OnPlatform x:Key="SmallSize"
+                        x:TypeArguments="x:Double"
+                        Android="10"
+                        iOS="10" />
+            <OnPlatform x:Key="MidSize"
+                        x:TypeArguments="x:Double"
+                        Android="12"
+                        iOS="12" />
+            <OnPlatform x:Key="MediumSize"
+                        x:TypeArguments="x:Double"
+                        Android="14"
+                        iOS="14" />
+            <OnPlatform x:Key="LargeSize"
+                        x:TypeArguments="x:Double"
+                        Android="16"
+                        iOS="16" />
+            <OnPlatform x:Key="BigSize"
+                        x:TypeArguments="x:Double"
+                        Android="20"
+                        iOS="20" />
+            <OnPlatform x:Key="BigestSize"
+                        x:TypeArguments="x:Double"
+                        Android="28"
+                        iOS="30" />
+            
+            <!--Define Fonts -->
+            <OnPlatform x:Key="DefaultRegularFont"
+                        x:TypeArguments="x:String"
+                        Android="Fonts/roboto/Roboto-Regular.ttf#Roboto"
+                        iOS="Roboto-Regular" />
+            <OnPlatform x:Key="DefaultMediumFont"
+                        x:TypeArguments="x:String"
+                        Android="Fonts/roboto/Roboto-Medium.ttf#Roboto"
+                        iOS="Roboto-Medium" />
+            <OnPlatform x:Key="DefaultBoldFont"
+                        x:TypeArguments="x:String"
+                        Android="Fonts/roboto/Roboto-Bold.ttf#Roboto"
+                        iOS="Roboto-Bold" />
+            
+            <!--Define Base Style -->
+             <Style x:Key="LabelBaseStyle" TargetType="{x:Type Label}" />
+            
+            
+            <!--Define Custom Style -->
+             <Style x:Key="LabelDefaultRegularStyle"
+                   BasedOn="{StaticResource LabelBaseStyle}"
+                   TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="{StaticResource DefaultRegularFont}" />
+            </Style>
+            <Style x:Key="LabelDefaultMediumStyle"
+                   BasedOn="{StaticResource LabelBaseStyle}"
+                   TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="{StaticResource DefaultMediumFont}" />
+            </Style>
+            <Style x:Key="LabelDefaultBoldStyle"
+                   BasedOn="{StaticResource LabelBaseStyle}"
+                   TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="{StaticResource DefaultBoldFont}" />
+            </Style>
+            
+        </ResourceDictionary>
+    </Application.Resources>    
 </Application>

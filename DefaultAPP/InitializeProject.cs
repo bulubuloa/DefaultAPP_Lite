@@ -12,10 +12,6 @@ namespace DefaultAPP
 {
     public class InitializeProject : SupportProjectXF<BaseLocator, BaseNavigationService>
     {
-        public InitializeProject()
-        {
-        }
-
         private async Task<NavigationPage> InitilizeNavigationPageWithPage(Xamarin.Forms.Page page)
         {
             var navigationPageWidget = new NavigationPage()
