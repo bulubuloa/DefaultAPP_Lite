@@ -1,18 +1,17 @@
-﻿using System;
-using SupportXFLite.Controllers.Navigations;
+﻿using SupportXFLite.Controllers;
 using SupportXFLite.ViewModels;
 
 namespace DefaultAPP.ViewModels
 {
-    public abstract class AppViewModel : BaseViewModel
+    public  class AppViewModel : XFLiteBaseViewModel
     {
         public AppViewModel()
         {
         }
 
-        public override IStandardNavigationService IF_GetNavigationService()
+        protected override ISupportProjectXF GetSupportProject()
         {
-            return App.Manager.NavigationManager;
+            return App.Manager;
         }
     }
 }

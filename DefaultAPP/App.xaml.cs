@@ -19,7 +19,7 @@ namespace DefaultAPP
         {
             InitializeComponent();
 
-            var navigationService = Manager.NavigationManager;
+            var navigationService = Manager.GetNavigationService();
             navigationService.NavigateToAsync<LoginViewModel>(true);
         }
 

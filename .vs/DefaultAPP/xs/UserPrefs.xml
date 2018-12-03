@@ -1,12 +1,30 @@
-﻿<Properties StartupConfiguration="{6EB43071-5DFE-4F6D-9BD8-D982F890A433}|Default">
+﻿<Properties StartupConfiguration="{6EB43071-5DFE-4F6D-9BD8-D982F890A433}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.DefaultAPP.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D39B639A-E15C-46DA-8FFE-CF9C4512D2FF" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DefaultAPP/App.xaml.cs">
+    <Files>
+      <File FileName="DefaultAPP/ViewModels/AppViewModel.cs" Line="17" Column="2" />
+      <File FileName="DefaultAPP/ViewModels/LoginViewModel.cs" Line="1" Column="1" />
+      <File FileName="DefaultAPP/App.xaml.cs" Line="22" Column="65" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DefaultAPP" expanded="True">
-            <Node name="DefaultAPP.Android" expanded="True" />
-            <Node name="DefaultAPP.iOS" selected="True" />
+            <Node name="DefaultAPP" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="DefaultAPP.Android" expanded="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="DefaultAPP.iOS" expanded="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

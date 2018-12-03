@@ -55,7 +55,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
     <PackageReference Include="SupportXFLite">
-      <Version>1.1.0</Version>
+      <Version>1.2.1-alpha</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
