@@ -2,6 +2,7 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using SupportUIXF.Droid;
 using SupportXFLite.Droid;
 
 namespace DefaultAPP.Droid
@@ -17,6 +18,7 @@ namespace DefaultAPP.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             SupportXFLiteSetup.Initialize(this, savedInstanceState);
+            SupportUIXFSetup.Initialize(this,savedInstanceState);
             LoadApplication(new App());
         }
     }

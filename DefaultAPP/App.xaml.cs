@@ -1,5 +1,6 @@
 ﻿using System;
 using DefaultAPP.ViewModels;
+using DefaultAPP.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,8 +20,13 @@ namespace DefaultAPP
         {
             InitializeComponent();
 
-            var navigationService = Manager.GetNavigationService();
-            navigationService.NavigateToAsync<LoginViewModel>(true);
+            MainPage = new LoginView()
+            {
+                BindingContext = new LoginViewModel()
+            };
+
+            //var navigationService = Manager.GetNavigationService();
+            //navigationService.NavigateToAsync<LoginViewModel>(true);
         }
 
         protected override void OnStart()

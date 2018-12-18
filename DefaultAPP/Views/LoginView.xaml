@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage x:Class="DefaultAPP.Views.LoginView"
              xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:DefaultAPP.Views.Converters"
+             xmlns:selector="clr-namespace:DefaultAPP.Views.Templates"
+             xmlns:supportUI="clr-namespace:SupportUIXF.Widgets;assembly=SupportUIXF">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="Tem1">
+                <ViewCell>
+                    <StackLayout Padding="20,20,20,5">
+                        <Label FontSize="12"
+                               Style="{StaticResource TahoMenuItemTextStyle}"
+                               Text="Tem1" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+            <DataTemplate x:Key="Tem2">
+                <ViewCell>
+                    <StackLayout Padding="20,20,20,5">
+                        <Label FontSize="12"
+                               Style="{StaticResource TahoMenuItemTextStyle}"
+                               Text="Tem2" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+            <selector:TestTemplateSelector x:Key="1TestTemplateSelector"
+                                           Tem1="{StaticResource Tem1}"
+                                           Tem2="{StaticResource Tem2}" />
+            
+            <converters:DisplayMoneyConverter x:Key="DisplayMoneyConverter"/>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout Padding="20">
+
+            <supportUI:SupportEntry HeightRequest="50"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="Silver"
+                                    OnTextChangedCommand="{Binding PercentChangedCommand}"
+                                    Text="{Binding Percent,Converter={StaticResource DisplayMoneyConverter},ConverterParameter=Percent}" />
+
+            <supportUI:SupportEntry HeightRequest="50"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="Silver"
+                                    OnTextChangedCommand="{Binding PercentValueChangedCommand}"
+                                    Text="{Binding PercentValue,Converter={StaticResource DisplayMoneyConverter},ConverterParameter=PercentValue}" />
+
+            <Label BackgroundColor="Purple" Text="{Binding ListPrice}" />
+
+            <Label BackgroundColor="Purple" Text="{Binding LastPrice}" />
+
+            <!--<supportUI:SupportBindableStackLayout HorizontalOptions="FillAndExpand"
+                                                  ItemTemplate="{StaticResource 1TestTemplateSelector}"
+                                                  ItemsSource="{Binding TestItems}" />
+
             <StackLayout HorizontalOptions="CenterAndExpand"
                          VerticalOptions="CenterAndExpand"
                          Orientation="Vertical">
@@ -12,7 +67,7 @@
                         HorizontalOptions="FillAndExpand"
                         Command="{Binding NextCommand}"
                         Text="Next" />
-            </StackLayout>
+            </StackLayout>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

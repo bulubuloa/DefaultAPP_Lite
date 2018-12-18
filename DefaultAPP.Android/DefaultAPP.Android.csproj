@@ -57,6 +57,9 @@
     <PackageReference Include="SupportXFLite">
       <Version>1.2.1-alpha</Version>
     </PackageReference>
+    <PackageReference Include="SupportUIXF">
+      <Version>1.0.8-preview</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using Lottie.Forms.iOS.Renderers;
+using SupportUIXF.iOS;
 using SupportXFLite.iOS;
 using UIKit;
 
@@ -26,6 +27,7 @@ namespace DefaultAPP.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             SupportXFLiteSetup.Initialize(this);
+            SupportUIXFSetup.Initialize(this);
             AnimationViewRenderer.Init();
             LoadApplication(new App());
 
